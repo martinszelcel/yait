@@ -9,8 +9,8 @@ services:
     container_name: yait-server
     command: npm start
     volumes:
-      - ./server/:/app/server
-      - /app/server/node_modules
+      - ./yait-server/:/app
+      - /app/node_modules
     ports:
       - "5000:5000"
     depends_on:
@@ -39,8 +39,8 @@ services:
     container_name: yait-client
     command: npm start
     volumes:
-      - ./client/:/app/client
-      - /app/client/node_modules
+      - ./yait-client/:/app
+      - /app/node_modules
     depends_on:
       - server
     ports:
