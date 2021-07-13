@@ -1,6 +1,8 @@
 [submodule "yait-server"]
 	path = yait-server
 	url = https://github.com/martinszelcel/yait-server
+	branch = main
 [submodule "yait-client"]
 	path = yait-client
 	url = https://github.com/martinszelcel/yait-client
+	branch = main
